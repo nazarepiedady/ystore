@@ -170,3 +170,8 @@ html {
     grid-column: 2;
     max-width: 60rem;
 }
+
+.modal__name {
+    font-size: 4.8rem;
+    margin: .5rem 0 1rem;
+}
