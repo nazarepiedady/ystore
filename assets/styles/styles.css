@@ -135,3 +135,18 @@ html {
         transform: translate3d(0, 0, 0);
     }
 }
+
+.modal__close-button {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: .2rem solid #000;
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    font-size: 1.6rem;
+    box-shadow: 0 .3rem .4rem rgba(0, 0, 0, .1),
+                0 .4rem 1rem rgba(0, 0, 0, .2);
+    cursor: pointer;
+    background-color: #fff;
+}
