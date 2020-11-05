@@ -165,3 +165,8 @@ html {
     display: block;
     max-width: 30rem;
 }
+
+.modal__info {
+    grid-column: 2;
+    max-width: 60rem;
+}
