@@ -31,3 +31,7 @@ html {
     margin: 0 auto;
     padding: 2rem 0;
 }
+
+.header__logo {
+    width: 8rem;
+}
