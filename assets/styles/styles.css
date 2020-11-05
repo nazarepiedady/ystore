@@ -72,3 +72,8 @@ html {
     box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
     cursor: pointer;
 }
+
+.product__image {
+    max-width: 30rem;
+    margin-right: 4rem;
+}
