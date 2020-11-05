@@ -47,3 +47,10 @@ html {
     background-repeat: no-repeat;
     background-position: center center;
 }
+
+.menu-cart {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    font-size: 1.6rem;
+}
