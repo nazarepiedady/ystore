@@ -77,3 +77,8 @@ html {
     max-width: 30rem;
     margin-right: 4rem;
 }
+
+.product__name {
+    line-height: 1;
+    font-size: 3rem;
+}
