@@ -5,3 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    font-size: 62.5%;
+    font-size-adjust: 0.5;
+    font-family: serif;
+}
