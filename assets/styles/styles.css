@@ -63,3 +63,12 @@ html {
     max-width: 90rem;
     margin: 10rem auto 0;
 }
+
+.product {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4rem;
+    background-color: #fff;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+    cursor: pointer;
+}
