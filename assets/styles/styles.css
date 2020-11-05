@@ -15,3 +15,7 @@ html {
 .wallpaper {
     background-image: linear-gradient(to right, #1a1a1a 30%, #fff 30%);
 }
+
+.container {
+    padding: 0 8rem;
+}
