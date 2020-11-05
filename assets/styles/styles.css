@@ -82,3 +82,8 @@ html {
     line-height: 1;
     font-size: 3rem;
 }
+
+.product__price {
+    font-size: 1.6rem;
+    color: rgba(0, 0, 0, .5);
+}
