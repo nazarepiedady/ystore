@@ -65,6 +65,10 @@ const vm = new Vue({
       this.alertMessage = message;
       this.altertOn = true;
       setTimeout(() => { this.alertOn = false; }, 1500);
+    },
+    router() {
+      const hash = document.location.hash;
+      if (hash) this.getProduct(hash.replace('#', ''));
     }
   }
 });
