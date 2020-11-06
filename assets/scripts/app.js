@@ -39,6 +39,9 @@ const vm = new Vue({
     },
     closeModal({ target, currentTarget }) {
       if (target === currentTarget) this.product = false;
+    },
+    clickOutCart({ target, currentTarget }) {
+      if (target === currentTarget) this.shopping = false;
     }
   }
 });
