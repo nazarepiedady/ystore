@@ -201,9 +201,10 @@ html {
     color: #fff;
     border: 0;
     font-size: 1.6rem;
-    padding: 1rem 1.5rem;
+    padding: 1.2rem 2rem;
     font-family: var(--sans-serif);
     transition: .3s;
+    text-transform: uppercase;
 }
 
 .modal__button--sold-out {
@@ -328,6 +329,15 @@ html {
     animation: fadeInDown .3s forwards;
 }
 
+.cart__heading {
+    font-size: 2rem;
+    font-family: var(--sans-serif);
+}
+
+.cart__empty {
+    font-size: 1.6rem;
+}
+
 .cart__shopping-list {
     list-style-type: none;
 }
@@ -341,6 +351,7 @@ html {
 
 .cart__shopping-name {
     font-size: 1.6rem;
+    font-weight: 400;
 }
 
 .cart__shopping-price {
@@ -378,7 +389,8 @@ html {
     font-size: 1.6rem;
     padding: 1rem 2.5rem;
     border: 0;
-    font-family: var(--serif);
+    font-family: var(--sans-serif);
+    text-transform: uppercase;
 }
 
 .cart__close-button {
@@ -452,8 +464,12 @@ html {
         padding: 1rem;
     }
 
+    .modal__desc {
+        font-size: 1.6rem;
+    }
+
     .modal__button {
-        margin-top: 2rem;
+        margin-top: 3rem;
     }
 
     .reviews {
@@ -466,7 +482,7 @@ html {
     }
 
     .reviews__username {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
 
     .cart-modal {
