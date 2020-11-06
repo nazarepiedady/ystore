@@ -35,10 +35,10 @@ const vm = new Vue({
     },
     openModal(id) {
       this.getProduct(id);
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-      });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    },
+    closeModal({ target, currentTarget }) {
+      if (target === currentTarget) this.product = false;
     }
   }
 });
