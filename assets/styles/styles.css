@@ -10,6 +10,7 @@
     --serif: serif;
     --box-shadow-1: 0 .3rem .4rem rgba(0, 0, 0, .1);
     --box-shadow-2: 0 .4rem 1rem rgba(0, 0, 0, .2);
+    --border-line: .1rem solid rgba(0, 0, 0, .1);
     --box-shadow: var(--box-shadow-1), var(--box-shadow-2);
 }
 
@@ -202,4 +203,27 @@ html {
 
 .reviews {
     grid-column: 2;
+}
+
+.reviews__heading {
+    font-size: 1.8rem;
+}
+
+.reviews__item {
+    padding-bottom: 2rem;
+    border-bottom: var(--border-line);
+}
+
+.reviews__item:not(:last-of-type) {
+    margin-bottom: 2rem;
+}
+
+.reviews__desc {
+    margin: 2rem 0 .5rem;
+    color: rgba(0, 0, 0, .7);
+}
+
+.reviews__username {
+    font-weight: bold;
+    font-size: 1.6rem;
 }
