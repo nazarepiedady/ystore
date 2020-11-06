@@ -293,3 +293,12 @@ html {
 .cart-modal.active {
     display: block;
 }
+
+.cart-container {
+    position: relative;
+    margin: 8rem auto;
+    background-color: #fff;
+    padding: 4rem;
+    max-width: 80rem;
+    animation: fadeInDown .3s forwards;
+}
