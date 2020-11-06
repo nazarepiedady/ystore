@@ -26,27 +26,27 @@
                 </article>
             </main>
 
-            <section class="modal">
+            <section class="modal" v-if="product" @click="closeModal">
                 <div class="modal-container">
                     <div class="modal__picture">
-                        <img alt="product desc" class="modal__image">
+                        <img :src="product.img" :alt="product.name" class="modal__image">
                     </div>
 
                     <div class="modal__info">
-                        <button class="modal__close-button">X</button>
-                        <span class="modal__price">price</span>
-                        <h2 class="modal__name">name</h2>
-                        <p class="modal__desc">description</p>
-                        <button class="modal__button">Add item to cart</button>
-                        <button class="modal__button modal__button--sold-out">Sold out</button>
+                        <button @click="product=false" class="modal__close-button">X</button>
+                        <span class="modal__price">{{ product.price | convertMoney }}</span>
+                        <h2 class="modal__name">{{ product.name }}</h2>
+                        <p class="modal__desc">{{ product.description }}</p>
+                        <button v-if="product.stock > 0" class="modal__button">Add item to cart</button>
+                        <button v-else class="modal__button modal__button--sold-out">Sold out</button>
                     </div>
 
                     <div class="reviews">
                         <h2 class="reviews__heading">Reviews</h2>
                         <ul class="reviews__list">
-                            <li class="reviews__item">
-                                <p class="reviews__desc">description</p>
-                                <p class="reviews__username">username</p>
+                            <li v-for="review in product.reviews" class="reviews__item">
+                                <p class="reviews__desc">{{ review.comment }}</p>
+                                <p class="reviews__username">{{ review.name }} | {{ review.stars }} stars</p>
                             </li>
                         </ul>
                     </div>

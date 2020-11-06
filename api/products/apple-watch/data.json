@@ -4,7 +4,7 @@
   "price": 1199,
   "description": "An expansive Retina display so you can see more at a glance. Advanced sensors to track all the ways you move. Powerful features to keep you healthy and safe. Apple Watch SE is a lot of watch for a lot less than you expected.",
   "stock": 5,
-  "img": "./api/produtos/smartwatch/smartwatch-foto.jpg",
+  "img": "./api/products/apple-watch/apple-watch.jpg",
   "reviews": [
     {
       "name": "Christina Mannuela",
