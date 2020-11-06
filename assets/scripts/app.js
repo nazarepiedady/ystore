@@ -81,5 +81,10 @@ const vm = new Vue({
     shoppingList() {
       localStorage.shoppingList = JSON.stringify(this.shoppingList);
     }
+  },
+  created() {
+    this.getProductList();
+    this.router();
+    this.checkLocalStorage();
   }
 });
