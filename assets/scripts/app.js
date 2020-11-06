@@ -42,6 +42,12 @@ const vm = new Vue({
     },
     clickOutCart({ target, currentTarget }) {
       if (target === currentTarget) this.shopping = false;
+    },
+    addShoppingItem() {
+      this.product.stock--;
+      const { id, name, price } = this.product;
+      this.shoppingList.push({ id, name, price });
+      this.alertAddition(`${name} was added to shopping cart`);
     }
   }
 });
