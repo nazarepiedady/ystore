@@ -7,13 +7,13 @@
   },
   {
     "id": "iphone",
-    "name": "Iphone",
+    "name": "iPhone",
     "price": 499,
     "img": "./api/products/iphone/iphone-ln.jpg"
   },
   {
     "id": "ipad",
-    "name": "Ipad",
+    "name": "iPad",
     "price": 599,
     "img": "./api/products/ipad/ipad-ln.jpg"
   },
