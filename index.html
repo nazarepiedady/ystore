@@ -17,11 +17,11 @@
             </header>
 
             <main class="product-container">
-                <article class="product">
-                    <img alt="product's image" class="product__image">
+                <article v-for="product in productList" class="product" @click="openModal(product.id)" :key="product.id">
+                    <img :src="product.img" :alt="product.name" class="product__image">
                     <section class="product__info">
-                        <span class="product__price">price</span>
-                        <h2 class="product__name">name</h2>
+                        <span class="product__price">{{ product.price | convertMoney }}</span>
+                        <h2 class="product__name">{{ product.name }}</h2>
                     </section>
                 </article>
             </main>
