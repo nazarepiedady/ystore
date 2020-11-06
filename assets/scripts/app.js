@@ -5,7 +5,7 @@ const vm = new Vue({
     shoopingList: [],
     product: false,
     shopping: false,
-    alert: false,
+    alertOn: false,
     alertMessage: 'Item was added to shopping list'
   },
   filters: {
@@ -47,7 +47,7 @@ const vm = new Vue({
       this.product.stock--;
       const { id, name, price } = this.product;
       this.shoppingList.push({ id, name, price });
-      this.alertAddition(`${name} was added to shopping cart`);
+      this.alert(`${name} was added to shopping cart`);
     },
     removeShoppingItem(index) {
       this.shoppingList.splice(index, 1);
@@ -60,6 +60,11 @@ const vm = new Vue({
       const items = this.shoppingList.filter(
         ({ id }) => id === this.product.id);
       this.product.stock -= items.length;
+    },
+    alert(message) {
+      this.alertMessage = message;
+      this.altertOn = true;
+      setTimeout(() => { this.alertOn = false; }, 1500);
     }
   }
 });
