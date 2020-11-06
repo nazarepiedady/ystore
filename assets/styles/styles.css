@@ -494,4 +494,8 @@ html {
     .cart-modal {
         padding: 1rem;
     }
+
+    .cart-container {
+        padding: 4rem 2.4rem;
+    }
 }
