@@ -90,7 +90,8 @@ html {
 
 .product__name {
     line-height: 1.2;
-    font-size: 3rem;
+    font-size: 3.8rem;
+    color: rgba(0, 0, 0, .8);
     font-family: var(--sans-serif);
 }
 
@@ -184,18 +185,20 @@ html {
 }
 
 .modal__price {
-    font-size: 1.8rem;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, .8);
     font-family: var(--sans-serif);
 }
 
 .modal__name {
     font-size: 4.8rem;
     margin: .5rem 0 1rem;
+    color: rgba(0, 0, 0, .8);
     font-family: var(--sans-serif);
 }
 
 .modal__button {
-    margin-top: 8rem;
+    margin-top: 4.8rem;
     background-color: #1a1a1a;
     cursor: pointer;
     color: #fff;
@@ -245,6 +248,7 @@ html {
 .reviews__desc {
     margin: 2rem 0 .5rem;
     color: rgba(0, 0, 0, .7);
+    font-size: 1.8rem;
 }
 
 .reviews__username {
