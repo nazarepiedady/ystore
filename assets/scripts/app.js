@@ -51,6 +51,10 @@ const vm = new Vue({
     },
     removeShoppingItem(index) {
       this.shoppingList.splice(index, 1);
+    },
+    checkLocalStorage() {
+      if (localStorage.shoppingList)
+        this.shoppingList = JSON.parse(localStorage.shoppingList);
     }
   }
 });
