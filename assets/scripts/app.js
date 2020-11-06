@@ -48,6 +48,9 @@ const vm = new Vue({
       const { id, name, price } = this.product;
       this.shoppingList.push({ id, name, price });
       this.alertAddition(`${name} was added to shopping cart`);
+    },
+    removeShoppingItem(index) {
+      this.shoppingList.splice(index, 1);
     }
   }
 });
