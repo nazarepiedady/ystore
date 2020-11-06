@@ -302,3 +302,63 @@ html {
     max-width: 80rem;
     animation: fadeInDown .3s forwards;
 }
+
+.cart__shopping-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 5rem;
+    border-bottom: var(--border-line);
+    padding: 1rem 0;
+}
+
+.cart__shopping-price {
+    font-size: 1.6rem;
+}
+
+.cart__shopping-price {
+    text-align: right;
+}
+
+.cart__shopping-total {
+    text-align: right;
+    padding: 1rem 5rem 1rem 0;
+    margin-bottom: 2rem;
+    border-bottom: .2rem solid #000:
+}
+
+.cart__heading {
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+    border-bottom: .2rem solid #000;
+}
+
+.cart__remove-button {
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.cart_purchase {
+    display: block;
+    margin-left: auto;
+    background-color: #000;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 1rem 2.5rem;
+    border: 0;
+    font-family: var(--serif);
+}
+
+.cart__close-button {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+}
