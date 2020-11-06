@@ -1,0 +1,20 @@
+{
+  "id": "ipad",
+  "name": "iPad",
+  "price": 599,
+  "description": "iPad Air does more than a computer in simpler, more magical ways. And now with more features and capabilities, it’s more versatile than ever.",
+  "in_stock": 2,
+  "img": "./api/products/ipad/ipad.jpg",
+  "reviews": [
+    {
+      "name": "Kevin Walker",
+      "stars": 4,
+      "comment": "It's a very handy product, specially to draw something."
+    },
+    {
+      "name": "Marian Andrews",
+      "stars": 4,
+      "comment": "A very versatile product by Apple, very light and beauty."
+    }
+  ]
+}

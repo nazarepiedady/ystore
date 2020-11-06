@@ -1,0 +1,20 @@
+{
+  "id": "speaker",
+  "name": "Speaker",
+  "price": 299,
+  "desc": "Todas estas questões, devidamente ponderadas, levantam dúvidas sobre se a necessidade de renovação processual causa impacto indireto na reavaliação do orçamento setorial.",
+  "in_stock": 3,
+  "img": "./api/products/speaker/speaker.jpg",
+  "reviews": [
+    {
+      "name": "Erick Sheep",
+      "stars": 5,
+      "comment": "Finally, I will can code with a beauty background sound."
+    },
+    {
+      "name": "Rose Kent",
+      "stars": 4,
+      "comment": "Now, I can hear my favorite songs smoothly"
+    }
+  ]
+}
