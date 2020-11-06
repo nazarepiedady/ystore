@@ -187,3 +187,11 @@ html {
     padding: 1rem 1.5rem;
     font-family: var(--serif);
 }
+
+.modal__button--sold-out {
+    background-color: #808080;
+}
+
+.modal__button:active {
+    background-color: #808080;
+}
