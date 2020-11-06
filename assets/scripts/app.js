@@ -21,5 +21,13 @@ const vm = new Vue({
         this.shoppingList.forEach(item => { total += item.price; });
       return total;
     }
+  },
+  methods: {
+    getProductList() {
+      fetch('./api/index.json')
+      .then(response => response.json())
+      .then(response => { this.productList = response; });
+    },
+    
   }
 });
