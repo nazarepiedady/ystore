@@ -53,28 +53,28 @@
                 </div>
             </section>
 
-            <section class="cart-modal">
+            <section class="cart-modal" :class="{ active: shopping }" @click="clickOutCart">
                 <div class="cart-container">
-                    <button class="cart__close-button">X</button>
+                    <button class="cart__close-button" @click="shopping=false">X</button>
                     <h2 class="cart__heading">Shopping Cart</h2>
-                    <div class="cart__shopping-cart">
+                    <div v-if="shoppingList.length > 0" class="cart__shopping-cart">
                         <ul class="cart__shopping-list">
-                            <li class="cart__shopping-item">
+                            <li v-for="(item, index) in shoppinList" class="cart__shopping-item" :key="index">
                                 <h3 class="cart__shopping-name">name</h3>
                                 <p class="cart__shopping-price">price</p>
-                                <button class="cart__remove-button">X</button>
+                                <button class="cart__remove-button" @click="removeShoppingItem(index)">X</button>
                             </li>
                         </ul>
-                        <p class="cart__shopping-total">total</p>
+                        <p class="cart__shopping-total">{{ cartTotal | convertMoney }}</p>
                         <button class="cart__purchase">Shop</button>
                     </div>
 
-                    <div>Shopping cart is empty.</div>
+                    <div v-else>Shopping cart is empty.</div>
                 </div>
             </section>
 
-            <div class="alert">
-                <p class="alert__message">message</p>
+            <div class="alert" :class="{ active: alertOn }">
+                <p class="alert__message">{{ alertMessage }}</p>
             </div>
         </div>
 

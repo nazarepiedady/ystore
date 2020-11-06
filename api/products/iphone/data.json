@@ -3,7 +3,7 @@
   "name": "iPhone",
   "price": 499,
   "desc": "5G goes Pro. A14 Bionic rockets past every other smartphone chip. The Pro camera system takes low-light photography to the next level — with an even bigger jump on iPhone 12 Pro Max. And Ceramic Shield delivers four times better drop performance. Let’s see what this thing can do.",
-  "in_stock": 3,
+  "stock": 3,
   "img": "./api/products/iphone/iphone.jpg",
   "reviews": [
     {
