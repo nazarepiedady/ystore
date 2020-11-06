@@ -55,6 +55,11 @@ const vm = new Vue({
     checkLocalStorage() {
       if (localStorage.shoppingList)
         this.shoppingList = JSON.parse(localStorage.shoppingList);
+    },
+    compareStock() {
+      const items = this.shoppingList.filter(
+        ({ id }) => id === this.product.id);
+      this.product.stock -= items.length;
     }
   }
 });
