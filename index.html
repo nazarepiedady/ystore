@@ -11,8 +11,8 @@
         <div id="app" class="container">
             <header class="header">
                 <img class="header__logo" src="./assets/images/logo.svg" alt="YSTORE Logotype">
-                <div class="menu-cart">
-                    menu cart here
+                <div class="menu-cart" @click="shopping=true">
+                    {{ cartTotal | convertMoney }} | {{ shoppingList.length }}
                 </div>
             </header>
 

@@ -2,7 +2,7 @@ const vm = new Vue({
   el: '#app',
   data: {
     productList: [],
-    shoopingList: [],
+    shoppingList: [],
     product: false,
     shopping: false,
     alertOn: false,
