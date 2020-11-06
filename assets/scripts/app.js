@@ -77,6 +77,9 @@ const vm = new Vue({
       const hash = this.product.id || '';
       history.pushState(null, null, `#${hash}`);
       if (this.product) this.compareStock();
+    },
+    shoppingList() {
+      localStorage.shoppingList = JSON.stringify(this.shoppingList);
     }
   }
 });
