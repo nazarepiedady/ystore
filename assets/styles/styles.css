@@ -227,3 +227,41 @@ html {
     font-weight: bold;
     font-size: 1.6rem;
 }
+
+
+/***
+    *** ALERT
+***/
+
+.alert {
+    display: none;
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+}
+
+.alert.active {
+    display: block;
+    animation: fadeInDown .3s forwards;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -3rem, 0);
+    } to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.alert__message {
+    background-color: #fff;
+    display: inline-block;
+    padding: 2rem 4rem;
+    border: .2rem solid #000;
+    box-shadow: var(--box-shadow);
+}
