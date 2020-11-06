@@ -70,5 +70,13 @@ const vm = new Vue({
       const hash = document.location.hash;
       if (hash) this.getProduct(hash.replace('#', ''));
     }
+  },
+  watch: {
+    product() {
+      document.title = this.product.name || 'YSTORE';
+      const hash = this.product.id || '';
+      history.pushState(null, null, `#${hash}`);
+      if (this.product) this.compareStock();
+    }
   }
 });
