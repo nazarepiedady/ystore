@@ -12,7 +12,7 @@
             <header class="header">
                 <img class="header__logo" src="./assets/images/logo.svg" alt="YSTORE Logotype">
                 <div class="menu-cart" @click="shopping=true">
-                    {{ cartTotal | convertMoney }} | {{ shoppingList.length }}
+                    ${{ cartTotal | convertMoney }} | {{ shoppingList.length }}
                 </div>
             </header>
 
@@ -20,7 +20,7 @@
                 <article v-for="product in productList" class="product" @click="openModal(product.id)" :key="product.id">
                     <img :src="product.img" :alt="product.name" class="product__image">
                     <section class="product__info">
-                        <span class="product__price">{{ product.price | convertMoney }}</span>
+                        <span class="product__price">${{ product.price | convertMoney }}</span>
                         <h2 class="product__name">{{ product.name }}</h2>
                     </section>
                 </article>
@@ -34,11 +34,11 @@
 
                     <div class="modal__info">
                         <button @click="product=false" class="modal__close-button">X</button>
-                        <span class="modal__price">{{ product.price | convertMoney }}</span>
+                        <span class="modal__price">${{ product.price | convertMoney }}</span>
                         <h2 class="modal__name">{{ product.name }}</h2>
-                        <p class="modal__desc">{{ product.description }}</p>
-                        <button v-if="product.stock > 0" class="modal__button">Add item to cart</button>
-                        <button v-else class="modal__button modal__button--sold-out">Sold out</button>
+                        <p class="modal__desc">{{ product.desc }}</p>
+                        <button v-if="product.stock > 0" class="modal__button" @click="addShoppingItem">Add item to cart</button>
+                        <button v-else class="modal__button modal__button--sold-out" disabled>Sold out</button>
                     </div>
 
                     <div class="reviews">
@@ -59,14 +59,14 @@
                     <h2 class="cart__heading">Shopping Cart</h2>
                     <div v-if="shoppingList.length > 0" class="cart__shopping-cart">
                         <ul class="cart__shopping-list">
-                            <li v-for="(item, index) in shoppinList" class="cart__shopping-item" :key="index">
-                                <h3 class="cart__shopping-name">name</h3>
-                                <p class="cart__shopping-price">price</p>
+                            <li v-for="(item, index) in shoppingList" class="cart__shopping-item" :key="index">
+                                <h3 class="cart__shopping-name">{{ item.name }}</h3>
+                                <p class="cart__shopping-price">${{ item.price | convertMoney }}</p>
                                 <button class="cart__remove-button" @click="removeShoppingItem(index)">X</button>
                             </li>
                         </ul>
-                        <p class="cart__shopping-total">{{ cartTotal | convertMoney }}</p>
-                        <button class="cart__purchase">Shop</button>
+                        <p class="cart__shopping-total">${{ cartTotal | convertMoney }}</p>
+                        <button class="cart__purchase">Shop now</button>
                     </div>
 
                     <div v-else>Shopping cart is empty.</div>

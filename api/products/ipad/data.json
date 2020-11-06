@@ -2,7 +2,7 @@
   "id": "ipad",
   "name": "iPad",
   "price": 599,
-  "description": "iPad Air does more than a computer in simpler, more magical ways. And now with more features and capabilities, it’s more versatile than ever.",
+  "desc": "iPad Air does more than a computer in simpler, more magical ways. And now with more features and capabilities, it’s more versatile than ever.",
   "stock": 2,
   "img": "./api/products/ipad/ipad.jpg",
   "reviews": [

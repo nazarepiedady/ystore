@@ -7,7 +7,8 @@
 }
 
 :root {
-    --serif: serif;
+    --serif: 'Andada', serif;
+    --sans-serif: 'Chivo', sans-serif;
     --box-shadow-1: 0 .3rem .4rem rgba(0, 0, 0, .1);
     --box-shadow-2: 0 .4rem 1rem rgba(0, 0, 0, .2);
     --border-line: .1rem solid rgba(0, 0, 0, .1);
@@ -61,6 +62,7 @@ html {
     cursor: pointer;
     align-items: center;
     font-size: 1.6rem;
+    font-family: var(--sans-serif);
 }
 
 /***
@@ -87,13 +89,15 @@ html {
 }
 
 .product__name {
-    line-height: 1;
+    line-height: 1.2;
     font-size: 3rem;
+    font-family: var(--sans-serif);
 }
 
 .product__price {
     font-size: 1.6rem;
     color: rgba(0, 0, 0, .5);
+    font-family: var(--sans-serif);
 }
 
 /***
@@ -156,6 +160,7 @@ html {
     box-shadow: var(--box-shadow);
     cursor: pointer;
     background-color: #fff;
+    font-family: var(--sans-serif);
 }
 
 .modal__picture {
@@ -173,9 +178,20 @@ html {
     max-width: 60rem;
 }
 
+.modal__desc {
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, .7);
+}
+
+.modal__price {
+    font-size: 1.8rem;
+    font-family: var(--sans-serif);
+}
+
 .modal__name {
     font-size: 4.8rem;
     margin: .5rem 0 1rem;
+    font-family: var(--sans-serif);
 }
 
 .modal__button {
@@ -186,13 +202,15 @@ html {
     border: 0;
     font-size: 1.6rem;
     padding: 1rem 1.5rem;
-    font-family: var(--serif);
+    font-family: var(--sans-serif);
+    transition: .3s;
 }
 
 .modal__button--sold-out {
     background-color: #808080;
 }
 
+.modal__button:hover,
 .modal__button:active {
     background-color: #808080;
 }
@@ -206,7 +224,12 @@ html {
 }
 
 .reviews__heading {
-    font-size: 1.8rem;
+    font-size: 2.6rem;
+    font-family: var(--sans-serif);
+}
+
+.reviews__list {
+    list-style-type: none;
 }
 
 .reviews__item {
@@ -226,6 +249,7 @@ html {
 .reviews__username {
     font-weight: bold;
     font-size: 1.6rem;
+    font-family: var(--sans-serif);
 }
 
 
@@ -264,6 +288,7 @@ html {
     padding: 2rem 4rem;
     border: .2rem solid #000;
     box-shadow: var(--box-shadow);
+    font-size: 1.6rem;
 }
 
 
@@ -303,6 +328,10 @@ html {
     animation: fadeInDown .3s forwards;
 }
 
+.cart__shopping-list {
+    list-style-type: none;
+}
+
 .cart__shopping-item {
     display: grid;
     grid-template-columns: 1fr 1fr 5rem;
@@ -310,11 +339,12 @@ html {
     padding: 1rem 0;
 }
 
-.cart__shopping-price {
+.cart__shopping-name {
     font-size: 1.6rem;
 }
 
 .cart__shopping-price {
+    font-size: 1.6rem;
     text-align: right;
 }
 
@@ -322,7 +352,8 @@ html {
     text-align: right;
     padding: 1rem 5rem 1rem 0;
     margin-bottom: 2rem;
-    border-bottom: .2rem solid #000:
+    border-bottom: .2rem solid #000;
+    font-size: 1.6rem;
 }
 
 .cart__heading {
@@ -338,7 +369,7 @@ html {
     background-color: transparent;
 }
 
-.cart_purchase {
+.cart__purchase {
     display: block;
     margin-left: auto;
     background-color: #000;
@@ -428,6 +459,14 @@ html {
     .reviews {
         grid-column: 1;
         padding: 1rem;
+    }
+
+    .reviews__desc {
+        font-size: 1.6rem;
+    }
+
+    .reviews__username {
+        font-size: 1.4rem;
     }
 
     .cart-modal {

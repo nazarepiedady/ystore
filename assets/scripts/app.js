@@ -10,8 +10,7 @@ const vm = new Vue({
   },
   filters: {
     convertMoney(value) {
-      return value.toLocaleString(
-        'en-US', { style: 'currency', currency: 'USA' });
+      return value.toLocaleString('en-US');
     }
   },
   computed: {
@@ -63,7 +62,7 @@ const vm = new Vue({
     },
     alert(message) {
       this.alertMessage = message;
-      this.altertOn = true;
+      this.alertOn = true;
       setTimeout(() => { this.alertOn = false; }, 1500);
     },
     router() {
