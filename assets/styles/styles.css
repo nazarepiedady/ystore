@@ -470,10 +470,12 @@ html {
 
     .modal__desc {
         font-size: 1.6rem;
+        line-height: 1.4;
     }
 
     .modal__button {
         margin-top: 3rem;
+        padding: 1.6rem 2.4rem;
     }
 
     .reviews {
