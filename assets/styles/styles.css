@@ -7,6 +7,7 @@
 }
 
 :root {
+    --serif: serif;
     --box-shadow-1: 0 .3rem .4rem rgba(0, 0, 0, .1);
     --box-shadow-2: 0 .4rem 1rem rgba(0, 0, 0, .2);
     --box-shadow: var(--box-shadow-1), var(--box-shadow-2);
@@ -15,7 +16,7 @@
 html {
     font-size: 62.5%;
     font-size-adjust: 0.5;
-    font-family: serif;
+    font-family: var(--serif);
 }
 
 .wallpaper {
@@ -174,4 +175,15 @@ html {
 .modal__name {
     font-size: 4.8rem;
     margin: .5rem 0 1rem;
+}
+
+.modal__button {
+    margin-top: 8rem;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    color: #fff;
+    border: 0;
+    font-size: 1.6rem;
+    padding: 1rem 1.5rem;
+    font-family: var(--serif);
 }
