@@ -28,6 +28,10 @@ const vm = new Vue({
       .then(response => response.json())
       .then(response => { this.productList = response; });
     },
-    
+    getProduct(id) {
+      fetch(`./api/products/${id}/data.json`)
+      .then(response => response.json())
+      .then(response => { this.product = response; });
+    }
   }
 });
